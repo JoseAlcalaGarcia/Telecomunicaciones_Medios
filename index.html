@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medios de comunicación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="TECNM.jpg" alt="Imagen Izquierda">
+            <div class="header-content">
+                <h1><b>Medios de comunicación</b></h1>
+                <p>ING. Martínez Pagola Salvador
+                    <br>Alcalá García José Luis
+                    <br>Olvera Jiménez Ronaldo
+                </p>
+                <p>Fecha: 12/03/2025</p>
+                <p>Fundamentos de Telecomunicaciones</p>
+            </div>
+            <img src="logo tecnm2.png" alt="Imagen Derecha">
+        </div>
+
+        <div class="chapter">
+            <h2>Medios de comunicación</h2>
+            <div class="content">
+                <p>El medio de transmisión (comunicación) es el camino físico en el que el
+                    emisor y receptor interactúan en un intercambio de datos. Cualquier medio físico que pueda
+                    transportar información en forma de señales electromagnéticas puede ser utilizado en las redes de
+                    datos como medio de transmisión.
+                    Al momento de seleccionar un medio de transmisión se debe tomar en cuenta los siguientes factores.
+                </p>
+                <ol>
+                    <li><b>Ancho de banda:</b> es el espectro de frecuencia que el medio puede transmitir. El ancho de banda es
+                        función del tipo de cable y de su longitud. </li>
+                    <li><b>Longitud:</b> Cada arquitectura y tipo de cable tiene definida las distancias máximas utilizables.
+                    </li>
+                    <li><b>Fiabilidad en la transferencia:</b> Determina la calidad de la transmisión. Se evalúa en porcentaje
+                        de errores por número de bits transmitidos.</li>
+                    <li><b>Aplicación:</b> Tipo de instalación para el que es más adecuado, así como la distancia que puede
+                        cubrir con facilidad.</li>
+                    <li><b>Restricciones de aplicación:</b> Las condiciones en que se ha de evitar el medio.</li>
+                    <li><b>Topología:</b> Las topologías que usan el cable.</li>
+                    <li><b>Vulnerabilidad de la red.</b></li>
+                    <li><b>Posibilidad de interferencias.</b></li>
+                    <li><b>Coste del medio.</b></li>
+                    <li><b>Facilidad y costes de la instalación:</b> Puede exceder al del costo del cable.</li>
+                    <li><b>Seguridad:</b> Grado de dificultad con que se las señales transportadas pueden ser intervenidas.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2>Medios de transmisión alámbricos</h2>
+            <div class="content">
+                <p>Este tipo de canal utiliza un medio físico para la transmisión de señales..</p>
+                <ul>
+                    <li>
+                        <b>Cable trenzado.</b>
+                        <ul>
+                            <li>
+                                <b>STP (Shielded Twisted Pair):</b>
+                                <br>
+                                <p>Es un cable cuyos conductores de cobre son trenzados por parejas y cada pareja de
+                                    estos va cubierta por una capa metálica que hace de pantalla. Adecuado para grandes
+                                    distancias y velocidad por su menor <b>atenuación<sup>1</sup></b> y menor sensibilidad a
+                                    las
+                                    interferencias. Normalmente con 4 pares</p>
+                            </li>
+                            <li>
+                                <b>UTP (Unshielded Twisted Pair):</b>
+                                <br>
+                                <p>Es un cable cuyos conductores de cobre son trenzados por parejas, pero no estan
+                                    cubiertos por ninguna capa metálica. Contiene 8 hilos de cobre que generan 4 pares
+                                    trenzados, la normativa permite que haya menor cantidad de pares.</p>
+                            </li>
+                        </ul>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De los cables UTP se deriva los
+                            cables; FTP (Foilded Twisted Pair) que es un cable UTP envueltos en una lamina metálica que
+                            hace de pantalla, S-UTP que es un cable cubierto por una malla y una lámina metálica.
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>1</sup>La atenuación se produce
+                            por la pérdida de energía radiada al ambiente, por lo que cuanto más apantallado esta un
+                            cable menor es esta. el cable UTP de categoría más alta tiene menor atenuación, ya que el
+                            mayor número de vueltas le da un mayor apantallamiento, y menor atenuación tiene el cable
+                            STP o el cable coaxial. Por otro lado, la atenuación depende de la frecuencia de la señal
+                            transmitida, a mayor frecuencia mayor atenuación cualquiera que sea el tipo de cable.
+                        </p>
+                        <p><b>Construcción de cables:</b></p>
+                        <ul>
+                            <li>
+                                <b>Construcción directa (Straight trhough):</b>
+                                <p>Los dos extremos del cable deben de conectarse según la norma T568-B. Se utiliza para
+                                    conectar ordenadores con los concentradores o equipos de comunicaciones.</p>
+                            </li>
+                            <li>
+                                <b>Construcción cruzada (Crossover):</b>
+                                <p>Un extremo del cable se debe armar según el estándar T568-A y el otro según el
+                                    estándar T568-B. Esto hace que los pares de transmisión y recepción queden cruzados,
+                                    lo que permite que se produzca la comunicación. Se utiliza para conectar dos
+                                    ordenadores directamente. En Ethernet 10BASE-T o 100BASE-TX sólo se usan cuatro
+                                    hilos.</p>
+                            </li>
+                            <table border="1">
+                                <caption><strong><i>Estándar de cableado T568-A</i></strong></caption>
+                                <tr>
+                                    <th>Nro. De pin</th>
+                                    <th>Nro. De par</th>
+                                    <th>Función</th>
+                                    <th>Color de hilo</th>
+                                    <th>¿Se usa con ethernet 10/100 base-T?</th>
+                                    <th>¿Se usa con ethernet 100 base-T4 y 1000 base-T?</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>Transmitir</td>
+                                    <td>Blanco/Naranja</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>Transmitir</td>
+                                    <td>Naranja/Blanco</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>Recibir</td>
+                                    <td>Blanco/Verde</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>No se usa</td>
+                                    <td>Azul/Blanco</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>No se usa</td>
+                                    <td>Verde/Azul</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>Recibir</td>
+                                    <td>Naranja/Blanco</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>4</td>
+                                    <td>No se usa</td>
+                                    <td>Blanco/Café</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>No se usa</td>
+                                    <td>Café/Blanco</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                            </table>
+                            <table border="1">
+                                <caption><strong><i>Estándar de cableado T568-B</i></strong></caption>
+                                <tr>
+                                    <th>Nro. De pin</th>
+                                    <th>Nro. De par</th>
+                                    <th>Función</th>
+                                    <th>Color de hilo</th>
+                                    <th>¿Se usa con ethernet 10/100 base-T?</th>
+                                    <th>¿Se usa con ethernet 100 base-T4 y 1000 base-T?</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>Transmitir</td>
+                                    <td>Blanco/Verde</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>Transmitir</td>
+                                    <td>Verde/Blanco</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>Recibir</td>
+                                    <td>Blanco/Naranja</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>No se usa</td>
+                                    <td>Azul/Blanco</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>No se usa</td>
+                                    <td>Blanco/Azul</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td>Recibir</td>
+                                    <td>Naranja/Blanco</td>
+                                    <td>SI</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>4</td>
+                                    <td>No se usa</td>
+                                    <td>Blanco/Café</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>No se usa</td>
+                                    <td>Café/Blanco</td>
+                                    <td>NO</td>
+                                    <td>SI</td>
+                                </tr>
+                            </table>
+
+
+                            <li>
+                                <b>Construcción Traspuesta:</b>
+                                <p>Se utiliza para conectarse desde un puerto de consola de router o switch a una
+                                    estación de trabajo de PC que ejecuta el software de emulación de terminal
+                                    HyperTerminal. Señalización y cableado del puerto de consola que usan transpuesto
+                                    RJ-45 y adaptador DB9.</p>
+                            </li>
+                            <table border="1">
+                                <caption><strong><i>Estándar de cableado traspuesto</i></strong></caption>
+                                <tr>
+                                    <th>Puerto de consola de router o switch(DTE)</th>
+                                    <th>Cable trans-puesto RJ-45 a RJ-45 (Extremo izquierdo)</th>
+                                    <th>Cable trans-puesto RJ-45 a RJ-45 (Extremo derecho)</th>
+                                    <th>Color de hilo</th>
+                                    <th>Adaptador RJ-45 a DB9</th>
+                                </tr>
+                                <tr>
+                                    <td>Señal</td>
+                                    <td>Desde el pin RJ-45 Nro</td>
+                                    <td>Hasta el pin RJ-45 Nro</td>
+                                    <td>Nro de pin DB9</td>
+                                    <td>Señal</td>
+                                </tr>
+                                <tr>
+                                    <td>RTS</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                    <td>8</td>
+                                    <td>CTS</td>
+                                </tr>
+                                <tr>
+                                    <td>DTR</td>
+                                    <td>2</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                    <td>DSR</td>
+                                </tr>
+                                <tr>
+                                    <td>TxD</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>RxD</td>
+                                </tr>
+                                <tr>
+                                    <td>GND</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>GND</td>
+                                </tr>
+                                <tr>
+                                    <td>GND</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>GND</td>
+                                </tr>
+                                <tr>
+                                    <td>DSR</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>DTR</td>
+                                </tr>
+                                <tr>
+                                    <td>CTS</td>
+                                    <td>8</td>
+                                    <td>1</td>
+                                    <td>7</td>
+                                    <td>RTS</td>
+                                </tr>
+                            </table>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Cable coaxial:</b>
+                        <P>Es un cable cuyo centro es un alambre duro de cobre que es llamado vivo, cubierto por un
+                            aislante llamado dieléctrico y este a su vez por una malla trenzada metálica conductora, el
+                            cable es envuelto en una cubierta de plástico. La malla trenzada sirve como referencia de
+                            tierra y retorno de las corrientes. Tiene un mayor ancho de banda que el par trenzado, es
+                            utilizado para la transmisión de datos, audio y video. En comparación con cualquier tipo o
+                            categoría de cable trenzado, el cable coaxial tiene un mayor apantallamiento, lo que le
+                            permite transmitir informacion a una mayor velocidad y distancia. </P>
+                        <ul>
+                            <li>
+                                <p>Cable coaxial de 50 ohms: Es utilizado en la transmisión digital, tambien es llamado
+                                    cable de banda base.</p>
+                                <ul>
+                                    <li>Tiene un diámetro aproximado de 0,94 mm (3/8 de pulgada). </li>
+                                    <li>Transporta una sola señal digital. </li>
+                                    <li>Velocidad de transmisión alta 10 o 12 Megabits. </li>
+                                    <li>Frecuencia de transmisión, relativamente baja.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>o Cable coaxial de 75 ohms: Es utilizado en la transmisión analógica, tambien es
+                                    llamado cable de banda ancha. </p>
+                                <ul>
+                                    <li>75 Ω CATV (CAble TV). </li>
+                                    <li>Transporta señales analógicas hasta 400 Mhz.</li>
+                                    <li>Ethernet: 10Broad-36: Banda ancha. Cable coaxial RG-59 A/U CATV. Velocidad
+                                        teórica = 10 Mbit/s. Longitud máxima del segmento = 3.600 metros. Método de
+                                        acceso CSMA/CD. </li>
+                                    <li>Las estaciones se conectan a los dos extremos del cable. La cobertura es de
+                                        1.800 metros. Requieren amplificadores. Los amplificadores solo pueden
+                                        transmitir la señal en una dirección. El mismo cable puede combinar señal de
+                                        televisión y datos. Se dedica principalmente a la televisión por cable. Las
+                                        redes de cable coaxial de banda ancha, contienen tres tipos diferentes de
+                                        líneas.</li>
+                                    <li>Cable principal.  Transporta las señales de un amplificador a otro.  Es más
+                                        grueso.  Esqueleto d distribución. </li>
+                                    <li>Cable secundario: Lleva la señal desde el cable principal hasta donde se
+                                        encuentra la estación. </li>
+                                    <li>Cable de acometida: Conecta la estación al cable secundario. Es más fino.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Fibra Óptica</b>
+                        <p>Es un cable muy diferente a los mencionados anteriormente, se compone de cristales y
+                            plásticos, pueden ser hechos de fibras de silicio fundido ultra-puro, de fibras de cristal
+                            multicomponentes o de fibras de plástico. La fibra óptica esta formada por tres secciones
+                            concéntricas:</p>
+                        <ul>
+                            <li>Núcleo: Está compuesto por fibras muy pequeñas de cristal o plástico, cada fibra esta
+                                rodeada por su propio revestimiento.</li>
+                            <li>Revestimiento: Actúa como reflector para que la luz no escape del núcleo. </li>
+                            <li>Cubierta: Es la capa exterior, esta proporciona protección al cable en contra de la
+                                humedad, abrasión y aplastamiento.</li>
+                        </ul>
+                        <p>La fibra óptica funciona con ondas electromagnéticas, se propagan en frecuencias luminosas
+                            gracias a su reflexión interna en las paredes de la fibra de materiales muy transparentes.
+                        </p>
+                        <ul>
+                            <li> Sistemas de transmisión de datos por LED:
+                                En este sistema un pulso de luz representa a 1 bit, los leds generan luz no coherente,
+                                siendo este pulso múltiples rayos de luz. Cada uno de estos rayos tiene un modo y a la
+                                fibra que se utiliza se le denomina Fibra <b>multimodo</b>.
+                            </li>
+                            <li>Este sistema genera luz coherente, genera un único rayo de luz y la fibra se comporta
+                                como una guía de ondas, la luz del láser se transmite sin dispersión. A esta fibra se le
+                                denomina <b>Fibra monomodo</b>. Este tipo de fibra sirve para transmitir información a
+                                grandes distancias y velocidad.</li>
+                        </ul>
+                        <b>Componentes</b>
+                        <ul>
+                            <li>Transmisor de energía óptica: formado por una fuente de alimentación y un foco de luz
+                                (LED/Láser) (Emisor).</li>
+                            <li>Fibra de vidrio o silicio (Conector).</li>
+                            <li>Detector de energía (Receptor): Detecta las señales de luz y las convierte a señales
+                                eléctricas. Es un fotodiodo que demodula la señal transportada por la onda de luz.</li>
+                        </ul>
+                        <b>Tipos de cables de fibra óptica - Fibra monomodo</b>
+                        <ul>
+                            <li>El diámetro del núcleo es sumamente fino. </li>
+                            <li>Alto rendimiento. </li>
+                            <li>Difícil manejo. Fibra multimodo de índice escalonado. </li>
+                            <li>Contiene un núcleo de alta resolución dentro de un revestimiento de más baja resolución.
+                            </li>
+                            <li>Conexiones a otros dispositivos más sencillo. Fibra multimodo de índice gradual.</li>
+                            <li>Esta fibra varía de densidad y tal variación reduce la dispersión de las señales. </li>
+                            <li>Tiene un índice de transmisión muy alto.</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2>Medios de transmisión inalámbricos</h2>
+            <div class="content">
+
+                <p> Este tipo de canal no depende de un medio físico para la transmisión de señales, en su lugar
+                    utilizan ondas electromagnéticas que se propagan por el espacio.</p>
+                <ul>
+                    <li>
+                        <b>Ondas de radio</b>
+                        <p>Este tipo de ondas son omnidireccionales, por lo tanto, no necesitan antenas parabólicas ni
+                            que
+                            estén alineadas. Consiste en emisión/receptor, ambos deben sintonizar la misma frecuencia,
+                            la
+                            emisión es capaz de pasar a través de las paredes y no es necesario la visión directa entre
+                            el
+                            emisor y receptor. Es facil de generar y es capaz de viajar a grandes distancias, aunque su
+                            velocidad suele ser baja (4800 kbits/seg), se debe tener cuidado con las interferencias de
+                            otras
+                            señales. Estas Ondas se producen aplicando corriente alterna a una antena.</p>
+                        <ul>
+                            <li><b>Ondas radio de banda estrecha:</b>
+                                <p>El usuario ajusta el emisor-receptor a una frecuencia dada. El alcance de la difusión
+                                    es de 1.650 m<sup>2</sup>. Como la frecuencia es elevada no puede traspasar paredes
+                                    de acero</p>
+                            </li>
+                            <li><b>Ondas radio de espectro expandido:</b>
+                                <p>transmite las señales dentro de un rango de frecuencias. Las velocidades pueden estar
+                                    comprendida entre 250 Kbps y 2 Mbps. Distancias entre 130 metros en interiores y
+                                    hasta 3200 m en exteriores.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Microondas</b>
+                        <p>Por encima de los 100mhz las ondas viajan en linea recta, estas ondas pueden ser conectadas
+                            por una antena parabólica concentrando toda la energía en un pequeño haz. Ambas antenas,
+                            emisora y receptora, deben estar alineadas para asegurar la conexión. Las ondas requieren
+                            repetidores, son vulnerables a obstáculos naturales y a la curvatura de la tierra, lo que
+                            provoca dificultades en su propagación.
+                            <br>
+                            Sirven básicamente para comunicaciones de vídeo o telefónicas. Las bandas de frecuencias más
+                            comunes para comunicaciones mediante microondas son las de 2,4, 6 y 6.8 GHz. Un enlace de
+                            microondas a 140 mbits/s puede proporcionar hasta 1920 canales de voz o bien varias
+                            comunicaciones de canales de 2 mbits/s multiplexados en el tiempo.
+                        </p>
+
+                    </li>
+                    <li>
+                        <b>Infrarrojos</b>
+                        <p>Permite la transmisión de información a velocidades muy altas: 10 Mbits/seg. Consiste en la
+                            emisión/recepción de un haz de luz; debido a esto, el emisor y receptor deben tener contacto
+                            visual (la luz viaja en línea recta). Debido a esta limitación pueden usarse espejos para
+                            modificar la dirección de la luz transmitida. Las ondas infrarrojas y milimétricas no
+                            guiadas se usan en la comunicación de corto alcance. Los mandos a distancia de los
+                            televisores usan los infrarrojos. No pueden cruzar los obstáculos. Se utilizan en LAN
+                            inalámbricas.
+                            <br>
+                            Infrarrojos Punto a punto: Haz direccional.
+                            Infrarrojos difundidos: Omnidireccional en pequeñas zonas.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chapter">
+            <h2>Bibliografía</h2>
+            <div class="content">
+                <section>
+                    <h2>Referencias</h2>
+                    
+                    <article>
+                      <p><strong>Universidad de Cádiz. (s.f.).</strong> <em>Tema 5: Medios de enseñanza</em>. Rodin.  
+                        <a href="https://rodin.uca.es/bitstream/handle/10498/16867/tema05_medios.pdf?isAllowed=y&sequence=1" target="_blank">
+                          https://rodin.uca.es/bitstream/handle/10498/16867/tema05_medios.pdf?isAllowed=y&sequence=1
+                        </a>
+                      </p>
+                    </article>
+                  
+                    <article>
+                      <p><strong>Autor desconocido. (s.f.).</strong> <em>Documento disponible en CORE</em>. CORE.  
+                        <a href="https://core.ac.uk/download/pdf/80532101.pdf" target="_blank">
+                          https://core.ac.uk/download/pdf/80532101.pdf
+                        </a>
+                      </p>
+                    </article>
+                  </section>
+                  
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
